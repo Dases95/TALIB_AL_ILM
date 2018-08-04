@@ -124,5 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILE_DIRS =[STATIC_DIR,]
+STATIC_ROOt = os.path.join(os.path.dirname(BASE_DIR),"static_cdn","static_root")
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL ='/media/'
+LOGIN_URL = 'talib/login'
